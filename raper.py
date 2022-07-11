@@ -12,7 +12,7 @@ def start_rape():
 
 
 
-icon = PhotoImage(file="C:\\Users\\lucam\\3D Objects\\screenshare raper\\img.png")
+icon = PhotoImage(file="img.png")
 wn.geometry("349x345")
 wn.title("Discord Raper")
 wn.iconphoto(True,icon)
@@ -20,7 +20,7 @@ wn.config(
     background="black"
 )
 
-img = Image.open("C:\\Users\\lucam\\3D Objects\\screenshare raper\\img.png")
+img = Image.open("img.png")
 resize_image= img.resize((250,150), Image.ANTIALIAS)
 newimg = ImageTk.PhotoImage(resize_image)
 
@@ -45,12 +45,5 @@ but = Button(wn,
             bg='black'
             ).pack(side=LEFT)
 
-#but2 = Button(wn,
-              #text="Stop ❌",
-              #command=stop_rape,
-              #font=('Comic Sans',15),
-              #fg='#8c0000',
-              #bg='black'
-              #).pack(side=RIGHT)
 
 wn.mainloop()
